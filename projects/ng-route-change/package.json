@@ -1,0 +1,7 @@
+{
+  "name": "ng-route-change",
+  "version": "1.0.20",
+  "devDependencies": {
+    "tslib": "^2.0.0"
+  }
+}
