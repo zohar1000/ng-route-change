@@ -46,6 +46,8 @@ export class NgRouteChangeService {
         if (!stateObj.hasOwnProperty(key)) stateObj[key] = this.getValue(snapshotObj[key]);
       }
     }
+
+    if (snapshot.data) this.data.state.data = snapshot.data;
   }
 
   clearData() {
@@ -61,7 +63,8 @@ export class NgRouteChangeService {
         // outlet: '',
         routeConfigPath: '',
         params: {},
-        queryParams: {}
+        queryParams: {},
+        data: undefined,
       },
       changes: {
         params: null,

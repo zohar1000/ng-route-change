@@ -6,6 +6,7 @@ export interface RouteChangeData {
     routeConfigPath: string;
     params: Object;
     queryParams: Object;
+    data?: Object;
   };
   changes: {
     params: Object | null;
